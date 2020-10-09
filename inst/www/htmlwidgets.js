@@ -251,6 +251,9 @@
     try {
       result = eval("(" + code + ")");
     } catch(error) {
+
+      console.log(code);
+
       if (!error instanceof SyntaxError) {
         throw error;
       }
@@ -900,4 +903,3 @@
     return result;
   }
 })();
-
